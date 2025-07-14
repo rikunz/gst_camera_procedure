@@ -3,4 +3,4 @@ gst-launch-1.0 libcamerasrc ! \
 	queue max-size-buffers=10 leaky=downstream ! \
 	videoconvert ! \
 	identity silent=false ! \
-	shmsink socket-path=/tmp/feed.raw sync=false wait-for-connection=false drop=true
+	shmsink socket-path=/tmp/feed.raw sync=false wait-for-connection=false
